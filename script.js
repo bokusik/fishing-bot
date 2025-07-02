@@ -73,6 +73,11 @@ function showWeatherInfo(pointName) {
     document.getElementById('updated').textContent = weather.updated;
     
     weatherInfo.style.display = 'block';
+
+    Telegram.WebApp.sendData(JSON.stringify({
+        action: "get_weather",
+        point_name: pointName
+    }));
 }
 
 // Возврат к списку

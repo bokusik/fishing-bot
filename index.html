@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рыболовный гид</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎣 Рыболовный гид Тарногского района</h1>
+        
+        <div class="water-points-list" id="points-list">
+            <!-- Список водоёмов будет здесь -->
+        </div>
+        
+        <div class="weather-info" id="weather-info" style="display: none;">
+            <h2 id="point-name"></h2>
+            <p>Глубина: <span id="point-depth"></span></p>
+            <p>Рыба: <span id="point-fish"></span></p>
+            <div class="weather-details">
+                <h3>Прогноз клёва</h3>
+                <p>Рейтинг: <span id="fish-rating"></span></p>
+                <p>Давление: <span id="pressure"></span></p>
+                <p>Ветер: <span id="wind"></span></p>
+                <p>Температура: <span id="temp"></span></p>
+                <p>Влажность: <span id="humidity"></span></p>
+                <p>Обновлено: <span id="updated"></span></p>
+            </div>
+            <button onclick="backToList()">← Назад</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
